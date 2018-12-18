@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 Cambria;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Sean Fernandes\
+\
+
+\f1\b Original Plan: \
+\pard\pardeftab720\ri720\partightenfactor0
+
+\f2\b0 \cf0 \
+\pard\pardeftab720\ri720\qc\partightenfactor0
+\cf0 Top Down Racing Game\
+\
+\pard\pardeftab720\ri720\partightenfactor0
+\cf0 Similar to my drag race, where the background moves around the player\'92s car. Players will steer their car through the track, and be given a time depending on how fast they go. The track will contain boosts, hazard, and will slow down players if they leave the track. If I have enough time, I\'92ll also add additional tracks, as well as multiple difficulty levels. \
+\
+Expected Features:\
+\
+Car controlled by wasd\
+Racetracks with boundaries, start, finish\
+Laps\
+Hazards on tracks\
+Boost pads\
+Multiple tracks\
+\
+Development plan\
+\
+Develop car controls\
+Create simple map\
+Detect when car is on or off road\
+Add Start/Finish line\
+Track player\'92s race time\
+Add multiple laps\
+Add hazards/boosts to track\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0 \
+\
+
+\f1\b PostMortem:\
+
+\f0\b0 I spent way too long trying to implement my original vision of a map that rotates around the player\'92s car. Turns out rotating is complicated and there\'92s a reason people make sidescrollers instead.  I ended up scrapping that and instead having a static map with a car that moves through it. I also lost an embarrassing amount of time to the fact that when I translated my origin to the centre, I mentally inverted my Y axis since I started thinking of it as a normal coordinate plane. As a result of the amount of time I spent struggling with those issues, I didn\'92t have as much left to work on visuals. Aside from the rotation setback, most of the rest of what I originally planned remains in the game, aside from more complex maps and better visuals. I would say the two most important things I learned were that rotation is weird in processing and not to touch it again, and to be a bit more flexible in my designs in the future, since that would have helped me to get less hung up on that one issue. I imagine Unity handles rotations better so I\'92m looking forward to that. }
